@@ -351,18 +351,19 @@ public final class Constants {
     public static final double kMaxAmbiguity = 0.20;
     // Use single-tag estimate if any detected tags exceed max distance.
     public static final double kMaxTagDistance = 3.5;
+    public static final double hackY = 0.035;
     public static final List<CameraConfig> kCameraConfigs = List.of(
       new CameraConfig(
         "reefCamera",
         new Transform3d(
-          0.1379980, -0.279292, 0.315,
+          0.1379980, -0.279292 + hackY, 0.315,
           new Rotation3d(0.0, 0.0, Units.degreesToRadians(21.5))),
         true
       ),
       new CameraConfig(
         "coralStationCamera",
         new Transform3d(
-          0.1300060, -0.283631, 0.996,
+          0.1300060, -0.283631 + hackY, 0.996,
           new Rotation3d(0.0, Units.degreesToRadians(-22.5), Units.degreesToRadians(9.5))),
         true
       )
