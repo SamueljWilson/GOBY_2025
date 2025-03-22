@@ -337,10 +337,10 @@ public final class Constants {
 
     public static final double kStingerYOffset = -0.008;
 
-    public static final double kReefXOffset = -(0.222 + kFrameToRobotCenter);
+    public static final double kReefXOffset = -(0.352 + kFrameToRobotCenter);
     public static final double kReefBranchOffset = 0.164; // Offset from center.
 
-    public static final double kStationXOffset = -(0.222 + kFrameToRobotCenter); // TODO: Tune.
+    public static final double kStationXOffset = -(0.415 + kFrameToRobotCenter); // TODO: Tune.
     public static final double kStationSlotSpacing = 0.202; // Distance between slots.
 
     public static final double kProcessorXOffset = -(0.222 + kFrameToRobotCenter); // TODO: Tune.
