@@ -23,9 +23,35 @@
           }
         },
         {
-          "type": "path",
+          "type": "parallel",
           "data": {
-            "pathName": "H10 To Coral Station"
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "H10 To Coral Station"
+                }
+              },
+              {
+                "type": "sequential",
+                "data": {
+                  "commands": [
+                    {
+                      "type": "wait",
+                      "data": {
+                        "waitTime": 1.0
+                      }
+                    },
+                    {
+                      "type": "named",
+                      "data": {
+                        "name": "Eject"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
           }
         },
         {
