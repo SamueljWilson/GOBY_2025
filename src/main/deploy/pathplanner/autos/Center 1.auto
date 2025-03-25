@@ -1,0 +1,55 @@
+{
+  "version": "2025.0",
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Center Start to H12"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Place 1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "GetAlgae"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "H12 to Algae Dump"
+          }
+        },
+        {
+          "type": "wait",
+          "data": {
+            "waitTime": 0.5
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Eject"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Rotate at Algae DUmp"
+          }
+        }
+      ]
+    }
+  },
+  "resetOdom": true,
+  "folder": null,
+  "choreoAuto": false
+}
