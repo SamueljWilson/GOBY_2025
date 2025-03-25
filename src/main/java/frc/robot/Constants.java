@@ -346,6 +346,7 @@ public final class Constants {
 
     public static final double kProcessorXOffset = -(0.222 + kFrameToRobotCenter); // TODO: Tune.
 
+    public static final Transform2d kL1ExtraReefOffset = new Transform2d(0.09, 0.0, Rotation2d.kZero);
     public static final Transform2d kAlgaeIntakeMove = new Transform2d(0.15, 0.0, Rotation2d.kZero);
     public static final Transform2d kCoralL1PlacementMove = new Transform2d(-0.1, 0.0, Rotation2d.kZero);
   }
