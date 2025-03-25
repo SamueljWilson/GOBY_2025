@@ -247,7 +247,7 @@ public class RobotContainer {
         new GetCoral(m_robotDrive, m_handler, m_crane, m_fieldPoseUtil, CoralStationSubPose.EIGHT));
 
     // Manual crane to level one
-    new JoystickButton(m_operatorController, OIConstants.kLevel1Button)
+    new JoystickButton(m_operatorController, OIConstants.kReadyClimbButton)
       .debounce(OIConstants.kDebounceSeconds)
       .onTrue(Commands.runOnce(() ->
         m_crane.moveTo(CraneConstants.kPositionL1a), m_crane));

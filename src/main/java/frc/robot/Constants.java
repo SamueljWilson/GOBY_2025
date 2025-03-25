@@ -308,6 +308,7 @@ public final class Constants {
     public static final int kAlgaeProcessorPOV = 270;
     public static final int kExtendClimberAxis = kLeftTriggerAxis;
     public static final int kRetractClimberAxis = kRightTriggerAxis;
+    public static final int kReadyClimbButton = kLeftJoy;
     public static final int kCoralIntake2 = 270;
     public static final int kCoralIntake5 = 180;
     public static final int kCoralIntake8 = 90;
