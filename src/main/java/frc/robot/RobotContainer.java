@@ -158,6 +158,7 @@ public class RobotContainer {
     m_chooser.addOption("Right 2A2", new PathPlannerAuto("Right 2A2"));
     m_chooser.addOption("Left 10B2", new PathPlannerAuto("Left 10B2"));
     m_chooser.addOption("Left 10B2 8B3", new PathPlannerAuto("Left 10B2 8B3"));
+    m_chooser.addOption("Left 10B2 10B3", new PathPlannerAuto("Left 10B2 10B3"));
     SmartDashboard.putData(m_chooser);
   }
 
