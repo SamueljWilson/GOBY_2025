@@ -348,7 +348,7 @@ public final class Constants {
 
     public static final Transform2d kL1ExtraReefOffset = new Transform2d(0.09, 0.0, Rotation2d.kZero);
     public static final Transform2d kAlgaeIntakeMove = new Transform2d(0.15, 0.0, Rotation2d.kZero);
-    public static final Transform2d kCoralL1PlacementMove = new Transform2d(-0.1, 0.0, Rotation2d.kZero);
+    public static final Transform2d kCoralL1PlacementMove = new Transform2d(-0.25, 0.0, Rotation2d.kZero);
   }
 
   public static final class CameraConstants {
@@ -602,7 +602,7 @@ public final class Constants {
     public static final Translation2d kPositionHome =
       new Translation2d(kPivotHome, kElevatorHome);
     public static final Translation2d kPositionL1a =
-      new Translation2d(Units.degreesToRadians(25.0), 0.36);
+      new Translation2d(Units.degreesToRadians(25.0), 0.41);
     public static final Translation2d kPositionL1b =
       new Translation2d(Units.degreesToRadians(15.0), 0.36);
     public static final Translation2d kPositionL2 =
