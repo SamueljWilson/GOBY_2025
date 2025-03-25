@@ -30,6 +30,7 @@ import frc.robot.commands.FaceReef;
 import frc.robot.commands.FaceStation;
 import frc.robot.commands.GetAlgae;
 import frc.robot.commands.GetCoral;
+import frc.robot.commands.LevelOnePlacement;
 import frc.robot.subsystems.CameraSubsystem;
 import frc.robot.subsystems.ClimberSubsystem;
 import frc.robot.subsystems.Crane;
@@ -251,6 +252,13 @@ public class RobotContainer {
       .debounce(OIConstants.kDebounceSeconds)
       .onTrue(Commands.runOnce(() ->
         m_crane.moveTo(CraneConstants.kPositionL1a), m_crane));
+
+    // Auto place Level 1
+    new Trigger(() -> 
+        m_operatorController.getRawButton(OIConstants.kReadyClimbButton) && 
+        m_driverController.getRawButton(OIConstants.kAutoDriveButton))
+      .debounce(OIConstants.kDebounceSeconds)
+      .whileTrue(new LevelOnePlacement(m_robotDrive, m_handler, m_crane, m_fieldPoseUtil, ReefSubPose.ALGAE));
 
     // Manual intake coral
     new JoystickButton(m_operatorController, OIConstants.kManualIntake)
