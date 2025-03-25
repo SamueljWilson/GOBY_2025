@@ -30,6 +30,7 @@ import frc.robot.commands.FaceReef;
 import frc.robot.commands.FaceStation;
 import frc.robot.commands.GetAlgae;
 import frc.robot.commands.GetCoral;
+import frc.robot.commands.LevelOnePlacement;
 import frc.robot.subsystems.CameraSubsystem;
 import frc.robot.subsystems.ClimberSubsystem;
 import frc.robot.subsystems.Crane;
@@ -141,6 +142,8 @@ public class RobotContainer {
     NamedCommands.registerCommand("Place B3",
       new CoralPlacement(m_robotDrive, m_handler, m_crane, m_fieldPoseUtil,
       ReefSubPose.B, CraneConstants.kPositionL3));
+    NamedCommands.registerCommand("Place 1", 
+      new LevelOnePlacement(m_robotDrive, m_handler, m_crane, m_fieldPoseUtil, ReefSubPose.ALGAE));
     NamedCommands.registerCommand("GetAlgae",
       new GetAlgae(m_robotDrive, m_handler, m_crane, m_fieldPoseUtil));
     NamedCommands.registerCommand("Eject",
